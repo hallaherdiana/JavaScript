@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+
+    <p>Masukkan Text :</p>
+    <input type="text" id="masukan" />
+    <button id="tombol">Tampilkan</button>
+
+    <script type="text/javascript">
+        document.getElementById("tombol").onclick = function() {
+            var x = document.getElementById("masukan").value;
+            alert(x);
+        };
+    </script>
+
+</body>
+</html>

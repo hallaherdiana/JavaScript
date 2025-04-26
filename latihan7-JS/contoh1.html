@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Inline</title>
+</head>
+<body>
+    <!-- INLINE -->
+    <button style="background-color: red" onclick="alert('Javascript Inline!')">
+        Tombol 1
+    </button>
+
+    <button style="background-color: yellow" onclick="tampilAlert1()">
+        Tombol 2
+    </button>
+
+    <button style="background-color: green" onclick="tampilAlert2()">
+        Tombol 3
+    </button>
+
+    <!-- EXTERNAL -->
+    <script src="external_javascript.js"></script>
+
+    <!-- INTERNAL -->
+    <script type="text/javascript">
+        function tampilAlert1() {
+            alert("Javascript Internal!");
+        }
+    </script>
+</body>
+</html>

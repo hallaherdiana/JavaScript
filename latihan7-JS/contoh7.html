@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+<body>
+
+    <p>Nilai 1 :</p>
+    <input type="text" id="nilai1">
+    
+    <p>Nilai 2 :</p>
+    <input type="text" id="nilai2">
+    
+    <br><br>
+
+    <button id="tambah" onclick="hitung_tambah()">+</button>
+    <button id="kurang" onclick="hitung_kurang()">-</button>
+
+    <br><br>
+
+    <p><span id="hasil"></span></p>
+
+    <script type="text/javascript">
+        function hitung_tambah() {
+            var n1 = document.getElementById("nilai1").value;
+            var n2 = document.getElementById("nilai2").value;
+            var hasil = Number(n1) + Number(n2);
+
+            document.getElementById("hasil").innerHTML =
+                "Hasil penjumlahan Asli : " + hasil +
+                ", Pembulatan : " + Math.round(hasil);
+        }
+
+        function hitung_kurang() {
+            var n1 = document.getElementById("nilai1").value;
+            var n2 = document.getElementById("nilai2").value;
+            var hasil = n1 - n2;
+
+            document.getElementById("hasil").innerHTML =
+                "Hasil pengurangan Asli : " + hasil +
+                ", Pembulatan : " + Math.round(hasil);
+        }
+    </script>
+
+</body>
+</html>
